@@ -1,0 +1,111 @@
+* Block Type = 96well
+* Chemistry = TAQMAN
+* Experiment File Name = D:\Kelly_PMNM_333.eds
+* Experiment Run End Time = Not Started
+* Instrument Type = steponeplus
+* Passive Reference = ROX
+
+[Results]
+Well	Sample Name	Target Name	Task	Reporter	Quencher	Cт	Cт Mean	Cт SD	Quantity	Quantity Mean	Quantity SD	Automatic Ct Threshold	Ct Threshold	Automatic Baseline	Baseline Start	Baseline End	Comments	HIGHSD	NOAMP
+A1	blank																	N	N
+A2	ddH2O	C	UNKNOWN	VIC	NFQ-MGB	Undetermined						true	0.01	true	16	22		N	N
+A2	ddH2O	D	UNKNOWN	FAM	NFQ-MGB	4.405	4.405					true	0.01	true	16	22		N	N
+A3	blank																	N	N
+A4	ddH2O	A	UNKNOWN	FAM	NFQ-MGB	Undetermined						false	0.01	false	16	22		N	Y
+A5	blank																	N	N
+A6	blank																	N	N
+A7	blank																	N	N
+A8	blank																	N	N
+A9	blank																	N	N
+A10	blank																	N	N
+A11	blank																	N	N
+A12	blank																	N	N
+B1	blank																	N	N
+B2	ddH2O	C	UNKNOWN	VIC	NFQ-MGB	Undetermined						true	0.01	true	16	22		N	Y
+B2	ddH2O	D	UNKNOWN	FAM	NFQ-MGB	Undetermined	4.405					true	0.01	true	16	22		N	Y
+B3	blank																	N	N
+B4	ddH2O	A	UNKNOWN	FAM	NFQ-MGB	Undetermined						false	0.01	false	16	22		N	Y
+B5	blank																	N	N
+B6	blank																	N	N
+B7	blank																	N	N
+B8	blank																	N	N
+B9	blank																	N	N
+B10	blank																	N	N
+B11	blank																	N	N
+B12	blank																	N	N
+C1	blank																	N	N
+C2	+C	C	UNKNOWN	VIC	NFQ-MGB	30.8915	31.1924	0.4256				true	0.01	true	16	22		N	N
+C2	+C	D	UNKNOWN	FAM	NFQ-MGB	31.0149	31.1583	0.2028				true	0.01	true	16	22		N	N
+C3	blank																	N	N
+C4	A-86	A	UNKNOWN	FAM	NFQ-MGB	34.4817	33.53	1.346				false	0.01	false	16	22		Y	N
+C5	blank																	N	N
+C6	blank																	N	N
+C7	blank																	N	N
+C8	blank																	N	N
+C9	blank																	N	N
+C10	blank																	N	N
+C11	blank																	N	N
+C12	blank																	N	N
+D1	blank																	N	N
+D2	+C	C	UNKNOWN	VIC	NFQ-MGB	31.4933	31.1924	0.4256				true	0.01	true	16	22		N	N
+D2	+C	D	UNKNOWN	FAM	NFQ-MGB	31.3018	31.1583	0.2028				true	0.01	true	16	22		N	N
+D3	blank																	N	N
+D4	A-86	A	UNKNOWN	FAM	NFQ-MGB	32.5782	33.53	1.346				false	0.01	false	16	22		Y	N
+D5	blank																	N	N
+D6	blank																	N	N
+D7	blank																	N	N
+D8	blank																	N	N
+D9	blank																	N	N
+D10	blank																	N	N
+D11	blank																	N	N
+D12	blank																	N	N
+E1	blank																	N	N
+E2	PMNM_333	C	UNKNOWN	VIC	NFQ-MGB	25.3387	25.3374	0.0018				true	0.01	true	16	22		N	Y
+E2	PMNM_333	D	UNKNOWN	FAM	NFQ-MGB	Undetermined	39.933					true	0.01	true	16	22		N	Y
+E3	blank																	N	N
+E4	PMNM_333	A	UNKNOWN	FAM	NFQ-MGB	Undetermined						false	0.01	false	16	22		N	Y
+E5	blank																	N	N
+E6	blank																	N	N
+E7	blank																	N	N
+E8	blank																	N	N
+E9	blank																	N	N
+E10	blank																	N	N
+E11	blank																	N	N
+E12	blank																	N	N
+F1	blank																	N	N
+F2	PMNM_333	C	UNKNOWN	VIC	NFQ-MGB	25.3361	25.3374	0.0018				true	0.01	true	16	22		N	Y
+F2	PMNM_333	D	UNKNOWN	FAM	NFQ-MGB	39.933	39.933					true	0.01	true	16	22		N	Y
+F3	blank																	N	N
+F4	PMNM_333	A	UNKNOWN	FAM	NFQ-MGB	Undetermined						false	0.01	false	16	22		N	Y
+F5	blank																	N	N
+F6	blank																	N	N
+F7	blank																	N	N
+F8	blank																	N	N
+F9	blank																	N	N
+F10	blank																	N	N
+F11	blank																	N	N
+F12	blank																	N	N
+G1	blank																	N	N
+G2	blank																	N	N
+G3	blank																	N	N
+G4	blank																	N	N
+G5	blank																	N	N
+G6	blank																	N	N
+G7	blank																	N	N
+G8	blank																	N	N
+G9	blank																	N	N
+G10	blank																	N	N
+G11	blank																	N	N
+G12	blank																	N	N
+H1	blank																	N	N
+H2	blank																	N	N
+H3	blank																	N	N
+H4	blank																	N	N
+H5	blank																	N	N
+H6	blank																	N	N
+H7	blank																	N	N
+H8	blank																	N	N
+H9	blank																	N	N
+H10	blank																	N	N
+H11	blank																	N	N
+H12	blank																	N	N

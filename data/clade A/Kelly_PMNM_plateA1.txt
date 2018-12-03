@@ -1,0 +1,105 @@
+* Block Type = 96well
+* Chemistry = TAQMAN
+* Experiment File Name = D:\Kelly_PMNM_plateA1.eds
+* Experiment Run End Time = Not Started
+* Instrument Type = steponeplus
+* Passive Reference = ROX
+
+[Results]
+Well	Sample Name	Target Name	Task	Reporter	Quencher	Cт	Cт Mean	Cт SD	Quantity	Quantity Mean	Quantity SD	Automatic Ct Threshold	Ct Threshold	Automatic Baseline	Baseline Start	Baseline End	Comments	HIGHSD	NOAMP
+A1	blank																	N	N
+A2	+C_52	A	UNKNOWN	FAM	NFQ-MGB	35.6625	35.2993	0.5137				false	0.01	false	16	22		Y	N
+A3	+C_52	A	UNKNOWN	FAM	NFQ-MGB	34.936	35.2993	0.5137				false	0.01	false	16	22		Y	N
+A4	+C_86	A	UNKNOWN	FAM	NFQ-MGB	39.5502	39.5502					false	0.01	false	16	22		N	N
+A5	+C_86	A	UNKNOWN	FAM	NFQ-MGB	Undetermined	39.5502					false	0.01	false	16	22		N	N
+A6	ddH2O	A	UNKNOWN	FAM	NFQ-MGB	Undetermined						false	0.01	false	16	22		N	N
+A7	ddH2O	A	UNKNOWN	FAM	NFQ-MGB	Undetermined						false	0.01	false	16	22		N	N
+A8	PMNM_1	A	UNKNOWN	FAM	NFQ-MGB	Undetermined						false	0.01	false	16	22		N	N
+A9	PMNM_1	A	UNKNOWN	FAM	NFQ-MGB	Undetermined						false	0.01	false	16	22		N	N
+A10	PMNM_11	A	UNKNOWN	FAM	NFQ-MGB	Undetermined						false	0.01	false	16	22		N	N
+A11	PMNM_11	A	UNKNOWN	FAM	NFQ-MGB	Undetermined						false	0.01	false	16	22		N	N
+A12	blank																	N	N
+B1	PMNM_21	A	UNKNOWN	FAM	NFQ-MGB	Undetermined						false	0.01	false	16	22		N	N
+B2	PMNM_21	A	UNKNOWN	FAM	NFQ-MGB	Undetermined						false	0.01	false	16	22		N	N
+B3	PMNM_31	A	UNKNOWN	FAM	NFQ-MGB	Undetermined						false	0.01	false	16	22		N	N
+B4	PMNM_31	A	UNKNOWN	FAM	NFQ-MGB	Undetermined						false	0.01	false	16	22		N	N
+B5	PMNM_41	A	UNKNOWN	FAM	NFQ-MGB	Undetermined						false	0.01	false	16	22		N	N
+B6	PMNM_41	A	UNKNOWN	FAM	NFQ-MGB	Undetermined						false	0.01	false	16	22		N	N
+B7	PMNM_51	A	UNKNOWN	FAM	NFQ-MGB	Undetermined						false	0.01	false	16	22		N	N
+B8	PMNM_51	A	UNKNOWN	FAM	NFQ-MGB	Undetermined						false	0.01	false	16	22		N	N
+B9	PMNM_61	A	UNKNOWN	FAM	NFQ-MGB	36.9186	36.9186					false	0.01	false	16	22		N	N
+B10	PMNM_61	A	UNKNOWN	FAM	NFQ-MGB	Undetermined	36.9186					false	0.01	false	16	22		N	N
+B11	PMNM_71	A	UNKNOWN	FAM	NFQ-MGB	Undetermined						false	0.01	false	16	22		N	N
+B12	PMNM_71	A	UNKNOWN	FAM	NFQ-MGB	Undetermined						false	0.01	false	16	22		N	N
+C1	PMNM_91	A	UNKNOWN	FAM	NFQ-MGB	Undetermined						false	0.01	false	16	22		N	N
+C2	PMNM_91	A	UNKNOWN	FAM	NFQ-MGB	Undetermined						false	0.01	false	16	22		N	N
+C3	PMNM_2	A	UNKNOWN	FAM	NFQ-MGB	Undetermined						false	0.01	false	16	22		N	N
+C4	PMNM_2	A	UNKNOWN	FAM	NFQ-MGB	Undetermined						false	0.01	false	16	22		N	N
+C5	PMNM_111	A	UNKNOWN	FAM	NFQ-MGB	Undetermined						false	0.01	false	16	22		N	N
+C6	PMNM_111	A	UNKNOWN	FAM	NFQ-MGB	Undetermined						false	0.01	false	16	22		N	N
+C7	PMNM_121	A	UNKNOWN	FAM	NFQ-MGB	Undetermined						false	0.01	false	16	22		N	N
+C8	PMNM_121	A	UNKNOWN	FAM	NFQ-MGB	Undetermined						false	0.01	false	16	22		N	N
+C9	PMNM_131	A	UNKNOWN	FAM	NFQ-MGB	Undetermined						false	0.01	false	16	22		N	N
+C10	PMNM_131	A	UNKNOWN	FAM	NFQ-MGB	Undetermined						false	0.01	false	16	22		N	N
+C11	PMNM_141	A	UNKNOWN	FAM	NFQ-MGB	Undetermined						false	0.01	false	16	22		N	Y
+C12	PMNM_141	A	UNKNOWN	FAM	NFQ-MGB	Undetermined						false	0.01	false	16	22		N	N
+D1	PMNM_151	A	UNKNOWN	FAM	NFQ-MGB	Undetermined						false	0.01	false	16	22		N	N
+D2	PMNM_151	A	UNKNOWN	FAM	NFQ-MGB	Undetermined						false	0.01	false	16	22		N	N
+D3	PMNM_161	A	UNKNOWN	FAM	NFQ-MGB	Undetermined						false	0.01	false	16	22		N	N
+D4	PMNM_161	A	UNKNOWN	FAM	NFQ-MGB	Undetermined						false	0.01	false	16	22		N	N
+D5	PMNM_171	A	UNKNOWN	FAM	NFQ-MGB	Undetermined						false	0.01	false	16	22		N	N
+D6	PMNM_171	A	UNKNOWN	FAM	NFQ-MGB	Undetermined						false	0.01	false	16	22		N	N
+D7	PMNM_181	A	UNKNOWN	FAM	NFQ-MGB	Undetermined						false	0.01	false	16	22		N	N
+D8	PMNM_181	A	UNKNOWN	FAM	NFQ-MGB	Undetermined						false	0.01	false	16	22		N	N
+D9	PMNM_191	A	UNKNOWN	FAM	NFQ-MGB	Undetermined						false	0.01	false	16	22		N	N
+D10	PMNM_191	A	UNKNOWN	FAM	NFQ-MGB	Undetermined						false	0.01	false	16	22		N	N
+D11	PMNM_102	A	UNKNOWN	FAM	NFQ-MGB	Undetermined						false	0.01	false	16	22		N	N
+D12	PMNM_102	A	UNKNOWN	FAM	NFQ-MGB	Undetermined						false	0.01	false	16	22		N	N
+E1	PMNM_112	A	UNKNOWN	FAM	NFQ-MGB	Undetermined						false	0.01	false	16	22		N	N
+E2	PMNM_112	A	UNKNOWN	FAM	NFQ-MGB	Undetermined						false	0.01	false	16	22		N	N
+E3	PMNM_201	A	UNKNOWN	FAM	NFQ-MGB	Undetermined						false	0.01	false	16	22		N	N
+E4	PMNM_201	A	UNKNOWN	FAM	NFQ-MGB	Undetermined						false	0.01	false	16	22		N	N
+E5	PMNM_211	A	UNKNOWN	FAM	NFQ-MGB	Undetermined						false	0.01	false	16	22		N	N
+E6	PMNM_211	A	UNKNOWN	FAM	NFQ-MGB	Undetermined						false	0.01	false	16	22		N	N
+E7	PMNM_221	A	UNKNOWN	FAM	NFQ-MGB	Undetermined	36.7536					false	0.01	false	16	22		N	N
+E8	PMNM_221	A	UNKNOWN	FAM	NFQ-MGB	36.7536	36.7536					false	0.01	false	16	22		N	N
+E9	PMNM_231	A	UNKNOWN	FAM	NFQ-MGB	Undetermined						false	0.01	false	16	22		N	N
+E10	PMNM_231	A	UNKNOWN	FAM	NFQ-MGB	Undetermined						false	0.01	false	16	22		N	Y
+E11	PMNM_241	A	UNKNOWN	FAM	NFQ-MGB	Undetermined						false	0.01	false	16	22		N	N
+E12	PMNM_241	A	UNKNOWN	FAM	NFQ-MGB	Undetermined						false	0.01	false	16	22		N	N
+F1	PMNM_251	A	UNKNOWN	FAM	NFQ-MGB	Undetermined						false	0.01	false	16	22		N	N
+F2	PMNM_251	A	UNKNOWN	FAM	NFQ-MGB	Undetermined						false	0.01	false	16	22		N	N
+F3	PMNM_261	A	UNKNOWN	FAM	NFQ-MGB	Undetermined						false	0.01	false	16	22		N	N
+F4	PMNM_261	A	UNKNOWN	FAM	NFQ-MGB	Undetermined						false	0.01	false	16	22		N	N
+F5	PMNM_271	A	UNKNOWN	FAM	NFQ-MGB	Undetermined						false	0.01	false	16	22		N	N
+F6	PMNM_271	A	UNKNOWN	FAM	NFQ-MGB	Undetermined						false	0.01	false	16	22		N	N
+F7	PMNM_281	A	UNKNOWN	FAM	NFQ-MGB	Undetermined						false	0.01	false	16	22		N	N
+F8	PMNM_281	A	UNKNOWN	FAM	NFQ-MGB	Undetermined						false	0.01	false	16	22		N	N
+F9	PMNM_291	A	UNKNOWN	FAM	NFQ-MGB	37.216	37.2874	0.101				false	0.01	false	16	22		N	N
+F10	PMNM_291	A	UNKNOWN	FAM	NFQ-MGB	37.3587	37.2874	0.101				false	0.01	false	16	22		N	N
+F11	PMNM_202	A	UNKNOWN	FAM	NFQ-MGB	Undetermined						false	0.01	false	16	22		N	N
+F12	PMNM_202	A	UNKNOWN	FAM	NFQ-MGB	Undetermined						false	0.01	false	16	22		N	N
+G1	PMNM_301	A	UNKNOWN	FAM	NFQ-MGB	Undetermined						false	0.01	false	16	22		N	N
+G2	PMNM_301	A	UNKNOWN	FAM	NFQ-MGB	Undetermined						false	0.01	false	16	22		N	N
+G3	PMNM_311	A	UNKNOWN	FAM	NFQ-MGB	Undetermined						false	0.01	false	16	22		N	Y
+G4	PMNM_311	A	UNKNOWN	FAM	NFQ-MGB	Undetermined						false	0.01	false	16	22		N	Y
+G5	PMNM_321	A	UNKNOWN	FAM	NFQ-MGB	Undetermined						false	0.01	false	16	22		N	N
+G6	PMNM_321	A	UNKNOWN	FAM	NFQ-MGB	Undetermined						false	0.01	false	16	22		N	N
+G7	PMNM_331	A	UNKNOWN	FAM	NFQ-MGB	Undetermined						false	0.01	false	16	22		N	N
+G8	PMNM_331	A	UNKNOWN	FAM	NFQ-MGB	Undetermined						false	0.01	false	16	22		N	N
+G9	PMNM_341	A	UNKNOWN	FAM	NFQ-MGB	Undetermined						false	0.01	false	16	22		N	N
+G10	PMNM_341	A	UNKNOWN	FAM	NFQ-MGB	Undetermined						false	0.01	false	16	22		N	N
+G11	PMNM_351	A	UNKNOWN	FAM	NFQ-MGB	Undetermined						false	0.01	false	16	22		N	N
+G12	PMNM_351	A	UNKNOWN	FAM	NFQ-MGB	Undetermined						false	0.01	false	16	22		N	N
+H1	blank																	N	N
+H2	PMNM_361	A	UNKNOWN	FAM	NFQ-MGB	Undetermined						false	0.01	false	16	22		N	N
+H3	PMNM_361	A	UNKNOWN	FAM	NFQ-MGB	Undetermined						false	0.01	false	16	22		N	N
+H4	PMNM_371	A	UNKNOWN	FAM	NFQ-MGB	Undetermined						false	0.01	false	16	22		N	N
+H5	PMNM_371	A	UNKNOWN	FAM	NFQ-MGB	Undetermined						false	0.01	false	16	22		N	N
+H6	PMNM_381	A	UNKNOWN	FAM	NFQ-MGB	Undetermined						false	0.01	false	16	22		N	N
+H7	PMNM_381	A	UNKNOWN	FAM	NFQ-MGB	Undetermined						false	0.01	false	16	22		N	N
+H8	PMNM_391	A	UNKNOWN	FAM	NFQ-MGB	Undetermined						false	0.01	false	16	22		N	N
+H9	PMNM_391	A	UNKNOWN	FAM	NFQ-MGB	Undetermined						false	0.01	false	16	22		N	N
+H10	PMNM_302	A	UNKNOWN	FAM	NFQ-MGB	Undetermined						false	0.01	false	16	22		N	Y
+H11	PMNM_302	A	UNKNOWN	FAM	NFQ-MGB	Undetermined						false	0.01	false	16	22		N	Y
+H12	blank																	N	N

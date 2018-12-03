@@ -1,0 +1,145 @@
+* Block Type = 96well
+* Chemistry = TAQMAN
+* Experiment File Name = D:\Kelly_PMNM_plate11.eds
+* Experiment Run End Time = Not Started
+* Instrument Type = steponeplus
+* Passive Reference = ROX
+
+[Results]
+Well	Sample Name	Target Name	Task	Reporter	Quencher	Cт	Cт Mean	Cт SD	Quantity	Quantity Mean	Quantity SD	Automatic Ct Threshold	Ct Threshold	Automatic Baseline	Baseline Start	Baseline End	Comments	HIGHSD	NOAMP
+A1	blank																	N	N
+A2	+C	C	UNKNOWN	VIC	NFQ-MGB	31.149	30.7026	0.6313				false	0.01	false	16	22		Y	Y
+A2	+C	D	UNKNOWN	FAM	NFQ-MGB	Undetermined						true	0.01	true	16	22		Y	Y
+A3	blank																	N	N
+A4	PMNM_82	C	UNKNOWN	VIC	NFQ-MGB	25.3848	25.5163	0.186				false	0.01	false	16	22		N	Y
+A4	PMNM_82	D	UNKNOWN	FAM	NFQ-MGB	Undetermined						true	0.01	true	16	22		N	Y
+A5	blank																	N	N
+A6	PMNM_317	C	UNKNOWN	VIC	NFQ-MGB	28.8002	28.9989	0.281				false	0.01	false	16	22		N	Y
+A6	PMNM_317	D	UNKNOWN	FAM	NFQ-MGB	Undetermined						true	0.01	true	16	22		N	Y
+A7	blank																	N	N
+A8	PMNM_353	C	UNKNOWN	VIC	NFQ-MGB	26.9314	26.8144	0.1654				false	0.01	false	16	22		N	Y
+A8	PMNM_353	D	UNKNOWN	FAM	NFQ-MGB	Undetermined						true	0.01	true	16	22		N	Y
+A9	blank																	N	N
+A10	PMNM_365	C	UNKNOWN	VIC	NFQ-MGB	25.3051	25.2628	0.0598				false	0.01	false	16	22		N	Y
+A10	PMNM_365	D	UNKNOWN	FAM	NFQ-MGB	Undetermined						true	0.01	true	16	22		N	Y
+A11	blank																	N	N
+A12	blank																	N	N
+B1	blank																	N	N
+B2	+C	C	UNKNOWN	VIC	NFQ-MGB	30.2563	30.7026	0.6313				false	0.01	false	16	22		Y	Y
+B2	+C	D	UNKNOWN	FAM	NFQ-MGB	Undetermined						true	0.01	true	16	22		Y	Y
+B3	blank																	N	N
+B4	PMNM_82	C	UNKNOWN	VIC	NFQ-MGB	25.6478	25.5163	0.186				false	0.01	false	16	22		N	N
+B4	PMNM_82	D	UNKNOWN	FAM	NFQ-MGB	Undetermined						true	0.01	true	16	22		N	N
+B5	blank																	N	N
+B6	PMNM_317	C	UNKNOWN	VIC	NFQ-MGB	29.1977	28.9989	0.281				false	0.01	false	16	22		N	N
+B6	PMNM_317	D	UNKNOWN	FAM	NFQ-MGB	Undetermined						true	0.01	true	16	22		N	N
+B7	blank																	N	N
+B8	PMNM_353	C	UNKNOWN	VIC	NFQ-MGB	26.6974	26.8144	0.1654				false	0.01	false	16	22		N	N
+B8	PMNM_353	D	UNKNOWN	FAM	NFQ-MGB	Undetermined						true	0.01	true	16	22		N	N
+B9	blank																	N	N
+B10	PMNM_365	C	UNKNOWN	VIC	NFQ-MGB	25.2205	25.2628	0.0598				false	0.01	false	16	22		N	N
+B10	PMNM_365	D	UNKNOWN	FAM	NFQ-MGB	Undetermined						true	0.01	true	16	22		N	N
+B11	blank																	N	N
+B12	blank																	N	N
+C1	blank																	N	N
+C2	ddH2O	C	UNKNOWN	VIC	NFQ-MGB	Undetermined						false	0.01	false	16	22		N	Y
+C2	ddH2O	D	UNKNOWN	FAM	NFQ-MGB	Undetermined	28.2273					true	0.01	true	16	22		N	Y
+C3	blank																	N	N
+C4	PMNM_107	C	UNKNOWN	VIC	NFQ-MGB	25.8116	25.8859	0.1051				false	0.01	false	16	22		N	N
+C4	PMNM_107	D	UNKNOWN	FAM	NFQ-MGB	Undetermined						true	0.01	true	16	22		N	N
+C5	blank																	N	N
+C6	PMNM_319	C	UNKNOWN	VIC	NFQ-MGB	25.0189	25.2152	0.2776				false	0.01	false	16	22		N	N
+C6	PMNM_319	D	UNKNOWN	FAM	NFQ-MGB	Undetermined						true	0.01	true	16	22		N	N
+C7	blank																	N	N
+C8	PMNM_356	C	UNKNOWN	VIC	NFQ-MGB	28.9791	28.6926	0.4052				false	0.01	false	16	22		N	N
+C8	PMNM_356	D	UNKNOWN	FAM	NFQ-MGB	Undetermined						true	0.01	true	16	22		N	N
+C9	blank																	N	N
+C10	PMNM_385	C	UNKNOWN	VIC	NFQ-MGB	25.3628	25.1067	0.3621				false	0.01	false	16	22		N	N
+C10	PMNM_385	D	UNKNOWN	FAM	NFQ-MGB	Undetermined						true	0.01	true	16	22		N	N
+C11	blank																	N	N
+C12	blank																	N	N
+D1	blank																	N	N
+D2	ddH2O	C	UNKNOWN	VIC	NFQ-MGB	Undetermined						false	0.01	false	16	22		N	Y
+D2	ddH2O	D	UNKNOWN	FAM	NFQ-MGB	28.2273	28.2273					true	0.01	true	16	22		N	Y
+D3	blank																	N	N
+D4	PMNM_107	C	UNKNOWN	VIC	NFQ-MGB	25.9602	25.8859	0.1051				false	0.01	false	16	22		N	N
+D4	PMNM_107	D	UNKNOWN	FAM	NFQ-MGB	Undetermined						true	0.01	true	16	22		N	N
+D5	blank																	N	N
+D6	PMNM_319	C	UNKNOWN	VIC	NFQ-MGB	25.4115	25.2152	0.2776				false	0.01	false	16	22		N	N
+D6	PMNM_319	D	UNKNOWN	FAM	NFQ-MGB	Undetermined						true	0.01	true	16	22		N	N
+D7	blank																	N	N
+D8	PMNM_356	C	UNKNOWN	VIC	NFQ-MGB	28.4061	28.6926	0.4052				false	0.01	false	16	22		N	N
+D8	PMNM_356	D	UNKNOWN	FAM	NFQ-MGB	Undetermined						true	0.01	true	16	22		N	N
+D9	blank																	N	N
+D10	PMNM_385	C	UNKNOWN	VIC	NFQ-MGB	24.8506	25.1067	0.3621				false	0.01	false	16	22		N	N
+D10	PMNM_385	D	UNKNOWN	FAM	NFQ-MGB	Undetermined						true	0.01	true	16	22		N	N
+D11	blank																	N	N
+D12	blank																	N	N
+E1	blank																	N	N
+E2	PMNM_28	C	UNKNOWN	VIC	NFQ-MGB	33.2324	33.8345	0.8515				false	0.01	false	16	22		Y	N
+E2	PMNM_28	D	UNKNOWN	FAM	NFQ-MGB	31.4476	32.7153	1.7927				true	0.01	true	16	22		Y	N
+E3	blank																	N	N
+E4	PMNM_304	C	UNKNOWN	VIC	NFQ-MGB	27.034	27.1988	0.2332				false	0.01	false	16	22		N	N
+E4	PMNM_304	D	UNKNOWN	FAM	NFQ-MGB	Undetermined						true	0.01	true	16	22		N	N
+E5	blank																	N	N
+E6	PMNM_326	C	UNKNOWN	VIC	NFQ-MGB	29.6453	29.7491	0.1467				false	0.01	false	16	22		N	N
+E6	PMNM_326	D	UNKNOWN	FAM	NFQ-MGB	Undetermined						true	0.01	true	16	22		N	N
+E7	blank																	N	N
+E8	PMNM_361	C	UNKNOWN	VIC	NFQ-MGB	39.4048	38.3204	1.5336				false	0.01	false	16	22		Y	N
+E8	PMNM_361	D	UNKNOWN	FAM	NFQ-MGB	Undetermined	12.4026					true	0.01	true	16	22		Y	N
+E9	blank																	N	N
+E10	PMNM_389	C	UNKNOWN	VIC	NFQ-MGB	Undetermined						false	0.01	false	16	22		N	Y
+E10	PMNM_389	D	UNKNOWN	FAM	NFQ-MGB	Undetermined						true	0.01	true	16	22		N	Y
+E11	blank																	N	N
+E12	blank																	N	N
+F1	blank																	N	N
+F2	PMNM_28	C	UNKNOWN	VIC	NFQ-MGB	34.4366	33.8345	0.8515				false	0.01	false	16	22		Y	N
+F2	PMNM_28	D	UNKNOWN	FAM	NFQ-MGB	33.9829	32.7153	1.7927				true	0.01	true	16	22		Y	N
+F3	blank																	N	N
+F4	PMNM_304	C	UNKNOWN	VIC	NFQ-MGB	27.3637	27.1988	0.2332				false	0.01	false	16	22		N	N
+F4	PMNM_304	D	UNKNOWN	FAM	NFQ-MGB	Undetermined						true	0.01	true	16	22		N	N
+F5	blank																	N	N
+F6	PMNM_326	C	UNKNOWN	VIC	NFQ-MGB	29.8529	29.7491	0.1467				false	0.01	false	16	22		N	N
+F6	PMNM_326	D	UNKNOWN	FAM	NFQ-MGB	Undetermined						true	0.01	true	16	22		N	N
+F7	blank																	N	N
+F8	PMNM_361	C	UNKNOWN	VIC	NFQ-MGB	37.2359	38.3204	1.5336				false	0.01	false	16	22		Y	N
+F8	PMNM_361	D	UNKNOWN	FAM	NFQ-MGB	12.4026	12.4026					true	0.01	true	16	22		Y	N
+F9	blank																	N	N
+F10	PMNM_389	C	UNKNOWN	VIC	NFQ-MGB	Undetermined						false	0.01	false	16	22		N	Y
+F10	PMNM_389	D	UNKNOWN	FAM	NFQ-MGB	Undetermined						true	0.01	true	16	22		N	Y
+F11	blank																	N	N
+F12	blank																	N	N
+G1	blank																	N	N
+G2	PMNM_72	C	UNKNOWN	VIC	NFQ-MGB	24.3501	24.5651	0.3041				false	0.01	false	16	22		N	N
+G2	PMNM_72	D	UNKNOWN	FAM	NFQ-MGB	Undetermined						true	0.01	true	16	22		N	N
+G3	blank																	N	N
+G4	PMNM_314	C	UNKNOWN	VIC	NFQ-MGB	26.386	26.566	0.2546				false	0.01	false	16	22		N	N
+G4	PMNM_314	D	UNKNOWN	FAM	NFQ-MGB	Undetermined						true	0.01	true	16	22		N	N
+G5	blank																	N	N
+G6	PMNM_343	C	UNKNOWN	VIC	NFQ-MGB	30.4968	30.5927	0.1357				false	0.01	false	16	22		N	N
+G6	PMNM_343	D	UNKNOWN	FAM	NFQ-MGB	Undetermined						true	0.01	true	16	22		N	N
+G7	blank																	N	N
+G8	PMNM_362	C	UNKNOWN	VIC	NFQ-MGB	35.3666	36.744	1.9479				false	0.01	false	16	22		Y	N
+G8	PMNM_362	D	UNKNOWN	FAM	NFQ-MGB	Undetermined	32.0501					true	0.01	true	16	22		Y	N
+G9	blank																	N	N
+G10	PMNM_333	C	UNKNOWN	VIC	NFQ-MGB	Undetermined						false	0.01	false	16	22		N	N
+G10	PMNM_333	D	UNKNOWN	FAM	NFQ-MGB	Undetermined						true	0.01	true	16	22		N	N
+G11	blank																	N	N
+G12	blank																	N	N
+H1	blank																	N	N
+H2	PMNM_72	C	UNKNOWN	VIC	NFQ-MGB	24.7801	24.5651	0.3041				false	0.01	false	16	22		N	Y
+H2	PMNM_72	D	UNKNOWN	FAM	NFQ-MGB	Undetermined						true	0.01	true	16	22		N	Y
+H3	blank																	N	N
+H4	PMNM_314	C	UNKNOWN	VIC	NFQ-MGB	26.746	26.566	0.2546				false	0.01	false	16	22		N	Y
+H4	PMNM_314	D	UNKNOWN	FAM	NFQ-MGB	Undetermined						true	0.01	true	16	22		N	Y
+H5	blank																	N	N
+H6	PMNM_343	C	UNKNOWN	VIC	NFQ-MGB	30.6887	30.5927	0.1357				false	0.01	false	16	22		N	Y
+H6	PMNM_343	D	UNKNOWN	FAM	NFQ-MGB	Undetermined						true	0.01	true	16	22		N	Y
+H7	blank																	N	N
+H8	PMNM_362	C	UNKNOWN	VIC	NFQ-MGB	38.1213	36.744	1.9479				false	0.01	false	16	22		Y	Y
+H8	PMNM_362	D	UNKNOWN	FAM	NFQ-MGB	32.0501	32.0501					true	0.01	true	16	22		Y	Y
+H9	blank																	N	N
+H10	PMNM_333	C	UNKNOWN	VIC	NFQ-MGB	Undetermined						false	0.01	false	16	22		N	Y
+H10	PMNM_333	D	UNKNOWN	FAM	NFQ-MGB	Undetermined						true	0.01	true	16	22		N	Y
+H11	blank																	N	N
+H12	blank																	N	N
