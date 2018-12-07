@@ -5,6 +5,7 @@ library(devtools)
 library(plyr)
 library(reshape2)
 library(lme4)
+library(steponeR)   # devtools::install_github("jrcunning/steponeR")
 
 
 #### qPCR data ####
@@ -12,7 +13,6 @@ library(lme4)
 ################################
 ## C and D mutiplexed plates ##
 ################################
-source_url("https://raw.githubusercontent.com/jrcunning/steponeR/master/steponeR.R")
 CD.plates <- list.files(path="data/clade C D", pattern = "txt$", full.names = T); CD.plates
 CD.qPCR <- steponeR(files=CD.plates, delim="\t",
                  target.ratios=c("C.D"),
@@ -197,9 +197,9 @@ CD.qPCR<-CD.qPCR[order(CD.qPCR$dom), ]
 ######## Clade A samples ###########
 ####################################
 
-source_url("https://raw.githubusercontent.com/jrcunning/steponeR/master/steponeR.R")
 A.plates <- list.files(path="data/clade A", pattern = "txt$", full.names = T); A.plates
-A.qPCR <- steponeR(files=A.plates, delim="\t")
+A.qPCR <- steponeR(files=A.plates, delim="\t", target.ratios = NULL, 
+                   fluor.norm = NULL, copy.number = NULL, ploidy = NULL, extract = NULL)
 
 # Clade A results
 A.qPCR <- A.qPCR$result; head(A.qPCR)
