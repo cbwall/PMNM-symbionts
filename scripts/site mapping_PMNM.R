@@ -5,12 +5,8 @@ library(RgoogleMaps)
 library(SDMTools)
 library(devtools)
 
-main<-setwd(getwd())
-setwd("~/Desktop/Research and Teaching/UH MANOA/Research/PMNM/qPCR/Symbiodinium/")
-
 data<-read.csv("data/PMNM_latlong.csv", header=TRUE, na.string=NA)
 data<-subset(data, !(is.na(Site.ID)))
-
 
 par(mfrow=c(2,1))
 

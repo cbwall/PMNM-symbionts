@@ -278,14 +278,14 @@ D.samples # recall, 1 FFS and 3 LAY
 A.df.both.reps # MAR (2), KUR (1), LIS (12), LAY (5)
 
 # import A dataframe, labeled
-df.A<-read.csv("PMNM A qPCR_labeled.csv")
+df.A<-read.csv("data/PMNM A qPCR_labeled.csv")
 A.reps <- df.A[which(df.A$fail==FALSE),]
 df.table.A.allcorals=table(df.A$Island) # number of corals sampled
 df.table.Apres=table(df.A$Island, df.A$fail) # number of corals with A (fail) and without
 A.prop.table<-round(prop.table(df.table.Apres,1), 2) # proportion table for corals A/site. The second argument specifies the total for each should sum to "1" and round to 2 digits
 
 # import C/D dataframe labeled
-df.CD<-read.csv("PMNM CD qPCR_labeled.csv")
+df.CD<-read.csv("data/PMNM CD qPCR_labeled.csv")
 df.table.CD.allcorals=table(df.CD$Island) # number of corals sampled
 df.table.CDpres=table(df.CD$Island, df.CD$dom) # corals with CD (fail) and without
 CD.prop.table<-round(prop.table(df.table.CDpres,1), 2)
@@ -339,7 +339,7 @@ dev.off()
 
 
 ##########
-df.CD<-read.csv("PMNM CD qPCR_labeled.csv") # labeled dataframe
+df.CD<-read.csv("data/PMNM CD qPCR_labeled.csv") # labeled dataframe
 df.CD$Depth..m<-(df.CD$Depth..ft*0.348) # converts ft. to m.
 
 #########
@@ -350,9 +350,9 @@ par(mfrow=(c(1,1)), mar=c(5,5,2,1))
 depth.df<-aggregate(Depth..m~Site+Island+Region, data=df.CD, FUN=mean) # dataframe for PMNM
 levels(depth.df$Island)
 depth.df$Island<-factor(depth.df$Island,levels(depth.df$Island)[c(2,6,7,4,3,5,1)])
-plot(depth.df$Depth..m~depth.df$Island, main="", xlab="Island or Atoll--North (L) to South (R)", ylab="Depth (m)", col="lightblue", cex=1, cex.axis=1.5, cex.lab=1.5) # depths across PMNM
+plot(depth.df$Depth..m~depth.df$Island, main="", xlab="Island or Atoll--North (L) to South (R)", ylab="Depth (m)", col="lightblue", cex=1, cex.axis=1, cex.lab=1) # depths across PMNM
 
-dev.copy(pdf, "Depthplot.pdf", width=8, height=5)
+dev.copy(pdf, "figures/Depthplot.pdf", width=8, height=5)
 dev.off()
 
 
@@ -368,7 +368,7 @@ df.CD.depth$Region<-factor(df.CD.depth$Region,levels(df.CD.depth$Region)[c(3,1,2
 plot(df.CD.depth$Depth..m~df.CD.depth$Region, ylim=c(0,17),  ylab="Depth (m)", xlab="Geographic Region") # depth from 3 - 50 ft
 
 ###########
-df.A<-read.csv("PMNM A qPCR_labeled.csv")
+df.A<-read.csv("data/PMNM A qPCR_labeled.csv")
 df.A # labeled dataframe
 df.A$Depth..m<-(df.A$Depth..ft*0.348) # converts ft. to m.
 df.A$Island<-factor(df.A$Island,levels(df.A$Island)[c(2,6,7,4,3,5,1)])
@@ -408,7 +408,7 @@ labs<- c("C+A", "C", "D+C")
 
 #Kure
 slices<-c(3, 97, 100, 0)
-pie(slices, labels=labs, main="Symbiont community", col=c("cadetblue3", "darkseagreen3", "coral"), main="Kure"))
+pie(slices, labels=labs, main="Symbiont community", col=c("cadetblue3", "darkseagreen3", "coral"), main="Kure")
 
 
 ##### chi-square tests
