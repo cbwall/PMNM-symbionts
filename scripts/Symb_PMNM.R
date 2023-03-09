@@ -3,11 +3,10 @@ ls()
 
 library(devtools)
 library(plyr)
-library(dplyr)
 library(reshape2)
 library(lme4)
-devtools::install_github("jrcunning/steponeR")
-library(steponeR)
+library(steponeR)   # devtools::install_github("jrcunning/steponeR")
+
 
 #### qPCR data ####
 
@@ -166,11 +165,12 @@ CD.df<-CD.df[!(CD.df$Sample.ID=="360" & CD.df$File.Name=="Wall_PMNM_CD_plate14.t
 CD.df<-CD.df[!(CD.df$Sample.ID=="363" & CD.df$File.Name=="Wall_PMNM_CD_plate14.txt"),]
 CD.df<-CD.df[!(CD.df$Sample.ID=="366" & CD.df$File.Name=="Wall_PMNM_CD_plate14.txt"),]
 CD.df<-CD.df[!(CD.df$Sample.ID=="372" & CD.df$File.Name=="Wall_PMNM_CD_plate14.txt"),]
+CD.df<-CD.df[!(CD.df$Sample.ID=="386" & CD.df$File.Name=="Wall_PMNM_CD_plate14.txt"),]
 CD.df<-CD.df[!(CD.df$Sample.ID=="28" & CD.df$File.Name=="Wall_PMNM_CD_plate15.txt"),]
 CD.df<-CD.df[!(CD.df$Sample.ID=="362" & CD.df$File.Name=="Wall_PMNM_CD_plate15.txt"),]
 CD.df<-CD.df[!(CD.df$Sample.ID=="15" & CD.df$File.Name=="Kelly_PMNM_plate4.txt"),]
 
-# below are not duplicates, but amplification errors
+#below are not duplicates, but amplification errors
 CD.df<-CD.df[!(CD.df$Sample.ID=="392" & CD.df$File.Name=="Kelly_PMNM_plate3.txt"),]
 CD.df<-CD.df[!(CD.df$Sample.ID=="396" & CD.df$File.Name=="Kelly_PMNM_plate6.txt"),]
 
@@ -192,12 +192,6 @@ CD.dom=table(CD.df$dom); CD.dom
 CD.qPCR<-CD.qPCR[order(CD.qPCR$dom), ]
 # write.csv(CD.qPCR, "PMNM qPCR_dom.types.csv")
 
-###### 
-###### final CD dataframe
-CD.df.final<-CD.df
-###### 
-###### 
-
 
 ####################################
 ######## Clade A samples ###########
@@ -209,7 +203,6 @@ A.qPCR <- steponeR(files=A.plates, delim="\t", target.ratios = NULL,
 
 # Clade A results
 A.qPCR <- A.qPCR$result; head(A.qPCR)
-A.qPCR$A.CT.mean[is.na(A.qPCR$A.CT.mean)] <-0
 
 # remove all controls, ddh20 samples
 A.qPCR <- A.qPCR[grep("A-86", A.qPCR$Sample.Name, fixed=T, invert = T), ]
@@ -266,38 +259,16 @@ A.df<-A.df[!(A.df$Sample.ID=="387" & A.df$File.Name=="Kelly_PMNM_plateA4.txt"),]
 
 A.df[A.df$Sample.Name=="PMNM_370",]
 
-# if want to remove all samples where A was NOT found in both reps....
-fails <- A.df[A.df$fail==TRUE, ]
-
 # write.csv(A.df, "output/precursor/PMNM A qPCR_dupl remove.csv") # final output data with a FAIL=TRUE where no amplification
 
-###### 
-###### final A dataframe
-A.df.final<-A.df
-###### 
-###### 
+
+# if want to remove all samples where A was NOT found in both reps....
+fails <- A.df[A.df$fail==TRUE, ]
+A.df.both.reps <- A.df[which(A.df$fail==FALSE),]
+# data file now is ONLY samples where A was found, and where A occurred in both technical reps
+# "A.df.both.reps" needs QA/QC
 
 
-###### ###### ###### ###### ###### ###### ###### 
-###### ###### ###### ###### ###### ###### ###### 
-## combine CD and A dataframe with metadata
-CDA.df<-as.data.frame(join_all(list(CD.df.final, A.df.final), by = "Sample.Name", type='full'))
-metadata<-read.csv("data/Site.metadata.csv")
-CDA.df.meta<-as.data.frame(join_all(list(CDA.df, metadata), by = "Sample.ID", type='full'))
-
-CDA.df.meta<- CDA.df.meta %>%
-  select(-c("Sample.number", "Date"))
-
-CDA.df.meta<- CDA.df.meta %>%
-  select(c("Project", "Region", "Island", "Site", "reef.zone", "Depth..m", "latitude", "longitude", 
-           "Sample.ID", "Sample.Name", "C.CT.mean", "D.CT.mean", "A.CT.mean", 
-            "C.CT.sd", "D.CT.sd", "A.CT.sd", "C.reps", "D.reps", "A.reps", "propC", "propD", "syms", "dom"))
-
-CDA.df.meta$wA<-  factor(ifelse(CDA.df.meta$A.reps==2, "A", "fail"))
-
-A.df.both.reps <- CDA.df.meta[which(CDA.df.meta$A.reps==2),]  # A only in presence of C
-D.A.all <- CDA.df.meta[which(CDA.df.meta$A.reps==2 | CDA.df.meta$D.reps==2),] 
-# data file is ONLY samples where A was found, and where A occurred in both technical reps
 
 
 ################################
@@ -306,18 +277,21 @@ D.A.all <- CDA.df.meta[which(CDA.df.meta$A.reps==2 | CDA.df.meta$D.reps==2),]
 D.samples # recall, 1 FFS and 3 LAY
 A.df.both.reps # MAR (2), KUR (1), LIS (12), LAY (5)
 
-
-######
-# A.df.both.reps
-df.table.A.allcorals=table(A.df.both.reps$Island) # number of corals sampled
-df.table.Apres=table(CDA.df.meta$Island, CDA.df.meta$wA) # number of corals with A (fail) and without
+# import A dataframe, labeled
+df.A<-read.csv("data/PMNM A qPCR_labeled.csv")
+A.reps <- df.A[which(df.A$fail==FALSE),]
+df.table.A.allcorals=table(df.A$Island) # number of corals sampled
+df.table.Apres=table(df.A$Island, df.A$fail) # number of corals with A (fail) and without
 A.prop.table<-round(prop.table(df.table.Apres,1), 2) # proportion table for corals A/site. The second argument specifies the total for each should sum to "1" and round to 2 digits
 
-# prop C vs. D dominated corals
-df.table.CD.allcorals=table(CDA.df.meta$Island) # number of corals sampled
-df.table.CDpres=table(CDA.df.meta$Island, CDA.df.meta$dom) # corals with CD (fail) and without
+# import C/D dataframe labeled
+df.CD<-read.csv("data/PMNM CD qPCR_labeled.csv")
+df.table.CD.allcorals=table(df.CD$Island) # number of corals sampled
+df.table.CDpres=table(df.CD$Island, df.CD$dom) # corals with CD (fail) and without
 CD.prop.table<-round(prop.table(df.table.CDpres,1), 2)
 
+
+##### combine dataframes #####
 # note that C and D on same, multiplexed run. A alone. At this point the # of reps is not equal due to a need for 100% of frags to be assessed for qPCR. Still gives good approximate.
 
 df.ACD<-as.data.frame.matrix(A.prop.table)
@@ -364,12 +338,16 @@ dev.copy(pdf, "CDA plot2.pdf", width=6, height=5)
 dev.off()
 
 
-######### Depths
+##########
+df.CD<-read.csv("data/PMNM CD qPCR_labeled.csv") # labeled dataframe
+df.CD$Depth..m<-(df.CD$Depth..ft*0.348) # converts ft. to m.
+
+#########
 par(mfrow=(c(1,1)), mar=c(5,5,2,1))
 #########
 # depths for each site--MID and MAR are noticably shallow relative to oother sites
 
-depth.df<-aggregate(Depth..m~Site+Island+Region, data=CDA.df.meta, FUN=mean) # dataframe for PMNM
+depth.df<-aggregate(Depth..m~Site+Island+Region, data=df.CD, FUN=mean) # dataframe for PMNM
 levels(depth.df$Island)
 depth.df$Island<-factor(depth.df$Island,levels(depth.df$Island)[c(2,6,7,4,3,5,1)])
 plot(depth.df$Depth..m~depth.df$Island, main="", xlab="Island or Atoll--North (L) to South (R)", ylab="Depth (m)", col="lightblue", cex=1, cex.axis=1, cex.lab=1) # depths across PMNM
@@ -381,22 +359,28 @@ dev.off()
 #########
 #########
 
-df.depth<-CDA.df.meta[(CDA.df.meta$dom=="D"),]
-df.CD.depth$Island<-factor(df.depth$Island,levels(df.depth$Island)[c(2,6,7,4,3,5,1)])
-plot(df.depth$Depth..m~df.depth$Island, ylim=c(0,17), ylab="Depth (m)", xlab="Island or Atoll--North (L) to South (R)")
+df.CD.depth<-df.CD[(df.CD$dom=="D"),]
+df.CD.depth$Island<-factor(df.CD.depth$Island,levels(df.CD.depth$Island)[c(2,6,7,4,3,5,1)])
+plot(df.CD.depth$Depth..m~df.CD.depth$Island, ylim=c(0,17), ylab="Depth (m)", xlab="Island or Atoll--North (L) to South (R)")
 
 levels(df.CD.depth$Region)
-df.depth$Region<-factor(df.depth$Region,levels(df.depth$Region)[c(3,1,2)])
-plot(df.CD.depth$Depth..m~df.depth$Region, ylim=c(0,17),  ylab="Depth (m)", xlab="Geographic Region") # depth from 3 - 50 ft
+df.CD.depth$Region<-factor(df.CD.depth$Region,levels(df.CD.depth$Region)[c(3,1,2)])
+plot(df.CD.depth$Depth..m~df.CD.depth$Region, ylim=c(0,17),  ylab="Depth (m)", xlab="Geographic Region") # depth from 3 - 50 ft
 
 ###########
-df.A.depth<-CDA.df.meta[(CDA.df.meta$wA=="A"),]
-df.A.depth$Island<-factor(df.A.depth$Island,levels(df.A.depth$Island)[c(2,6,7,4,3,5,1)])
+df.A<-read.csv("data/PMNM A qPCR_labeled.csv")
+df.A # labeled dataframe
+df.A$Depth..m<-(df.A$Depth..ft*0.348) # converts ft. to m.
+df.A$Island<-factor(df.A$Island,levels(df.A$Island)[c(2,6,7,4,3,5,1)])
+levels(df.A$Island)
+
+df.A.depth<-df.A[(df.A$fail=="FALSE"),]
 levels(df.A.depth$Island)
 plot(df.A.depth$Depth..m~df.A.depth$Island, ylim=c(0,17), ylab="Depth (m)", xlab="Island or Atoll--North (L) to South (R)")
 
 df.A.depth$Region<-factor(df.A.depth$Region,levels(df.A.depth$Region)[c(3,1,2)])
 plot(df.A.depth$Depth..m~df.A.depth$Region, ylim=c(0,17),  ylab="Depth (m)", xlab="Geographic Region") # depth from 3 - 50 ft
+
 
 Islands=c(1:7)
 clades<-c("D>C", "C+A")
@@ -408,6 +392,23 @@ plot(df.CD.depth$Depth..m~df.CD.depth$Island, ylim=c(0,17), xaxt="n", ylab="Dept
 axis(side=1, at=Islands, cex.axis=0.1)
 legend("topleft", legend=clades, col=colors, pch=15, pt.cex=2.5, cex=1, bty="n", x.intersp=0.4, y.intersp=0.6, title="symbiont clades")
 plot(df.A.depth$Depth..m~df.A.depth$Island, ylim=c(0,17), ylab="Depth (m)", xlab="Island or Atoll", col="cadetblue3")
+
+
+##############
+df.ACD.ordered
+
+par(mfrow=c(1,1))
+slices<-c(361,4)
+lab<-c("C", "D+C")
+pie(slices, labels=lab, main="Symbiont community", col=c("cadetblue2", "coral"))
+
+pie.df<-df.ACD.ordered[,c(1:4)] # proportions
+isl<-df.ACD.ordered[,5] # names
+labs<- c("C+A", "C", "D+C")
+
+#Kure
+slices<-c(3, 97, 100, 0)
+pie(slices, labels=labs, main="Symbiont community", col=c("cadetblue3", "darkseagreen3", "coral"), main="Kure")
 
 
 ##### chi-square tests

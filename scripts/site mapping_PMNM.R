@@ -2,7 +2,6 @@ rm(list=ls())
 ls()
 
 library(RgoogleMaps)
-library(SDMTools)
 library(devtools)
 
 data<-read.csv("data/PMNM_latlong.csv", header=TRUE, na.string=NA)
